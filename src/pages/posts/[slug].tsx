@@ -84,5 +84,6 @@ export const getServerSideProps: GetServerSideProps = async ({
     props: {
       post,
     },
+    revalidate: 60 * 5
   };
 };
