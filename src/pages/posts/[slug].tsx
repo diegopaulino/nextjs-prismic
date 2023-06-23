@@ -16,7 +16,6 @@ interface PostProps {
 }
 
 export default function Post({ post }: PostProps) {
-  console.log(post.cover);
   return (
     <>
       <Head>
@@ -84,6 +83,5 @@ export const getServerSideProps: GetServerSideProps = async ({
     props: {
       post,
     },
-    revalidate: 60 * 5
   };
 };
